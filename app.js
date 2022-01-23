@@ -6,7 +6,7 @@ app.use(express.static("public"))
 
 let puerto=3003
 
-app.get("/home",(req,res)=>{
+app.get("/",(req,res)=>{
     res.sendFile(__dirname + "/views/home.html")
 })
 

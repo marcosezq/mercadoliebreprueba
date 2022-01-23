@@ -1,0 +1,450 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*------------------------- Seccion del body-------------------------------------- */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    
+}
+
+/* --------------------------Tamaño y estilo de letra------------------------------------------ */
+
+h2{
+    font-size: 24px;
+    color: #666;
+}
+
+p{
+    font-size: 12px;
+}
+
+nav{
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color:black
+}
+
+.precio{
+    font-size: 18px;
+    width:35% ;
+}
+
+.descuento{
+    width: 65%;
+    color: #39b54a;
+    font-size: 16px;
+}
+
+.t16{
+    font-size: 16px;
+}
+
+
+
+.descripcion{
+    font-size: 16px;
+    margin-top: 20px;
+    display: none;
+}
+
+
+
+.cuota{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+footer section {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+
+/* ------------------------------------Iconos----------------------------------------------- */
+
+
+/* --------Menu----------- */
+.menu{
+        background-color: #0044AA;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        margin: 10px 0px 20px 0px;
+        padding: 10px;
+        width: 40px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+/*-------- Camion----------- */
+.camion{
+    display: flex;
+    color:#39b54a;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    background-color:white;
+    border:solid 1px #39b54a ;
+    border-radius: 50%;
+}
+
+
+
+/*--------- Logo ------------- */
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+/* ---------Buscador----------- */
+
+
+/* -----------------------------------Margenes----------------------------------------- */
+
+.juntar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+
+
+/* ----Margen seccion de producto----- */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main article{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+
+.margen-art{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/*------------------------ Seccion del header-------------------------------------- */
+
+header{
+    background-color:#EAC926; 
+}
+
+/* ------------------------Seccion del main ---------------------------------------------*/
+
+main section article{
+    background-color: white;
+}
+
+/* ----------------------------Footer---------------------------------------------------- */
+
+
+
+/* Borrador */
+
+
+.iconos{
+    color: #1259c3;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+footer section{
+    padding-top: 50px;
+}
+
+
+div.ultima-visita,
+div.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* -------------------------------Seccion de Ingreso y Registro ------------------------------------------------*/
+.form-login{
+    width: 60%;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.controls{
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    border: 1px solid #ebebeb;
+}
+
+.botons{
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #0044AA;
+    border: 1px solid #0044AA;
+}
+.botons1{
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #0044AA;
+    border: 1px solid #0044AA;
+    margin-top: 5%;
+}
+.form-registers{
+    width: 80%;
+    margin:auto;
+    margin-top: 20px;
+}
+
+
+.margen4{
+    padding-bottom: 10%;
+}
+.margen5{
+    padding-bottom: 5%;
+}
+
+.profile{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+/* ------------------------------------Media queries------------------------------------------------- */
+
+header nav{
+    display: none;
+}
+/* -------------Version Tablet  --------*/
+@media (min-width:361px ){
+
+    header nav{
+        display: block;
+        text-decoration: none;
+    }
+    .form-buscador{
+        width: 33% ;
+        margin: auto;
+    }
+
+    main section article{
+        transition: box-shadow ;
+    }
+    
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article:hover .descripcion{
+        display: block;
+
+    }
+
+    main section div.products article:hover i{
+        transform: rotate(-90deg);
+    }
+
+    footer section article:hover .tarjeta{
+        color:tomato
+
+    }
+    
+    header .menu2{
+        display: none;
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+    .espacio30,
+    .espacio70{
+        width: 50%;
+    }
+
+    .foo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+        
+}
+/* -------------Version Escritorio */
+
+@media (min-width: 769px){
+
+
+    main section div.products article{
+        width: 22%;
+    }
+    .cat{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+    .cat2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly ;
+    }
+    .cat3{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .juntar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .cuota{
+        display: flex;
+        align-items: center;
+        width: 33%;
+    }
+    .ancho-center{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 33%;
+        padding: 10px;
+    }
+    .ancho33{
+        width: 33%;
+    }
+    .form-registers{
+        width: 40%;
+        margin:auto;
+        margin-top: 20px;
+    }
+
+}
+
+
+.ancho100{
+    width: 100%;
+}
+
+.ancho50{
+    width: 35%;
+}
+
+
+.ancho51{
+    width: 25%;
+}
+.ancho10{
+    width: 17%;
+    padding-right: 50px;
+}
+
+header nav{
+    margin-left: 20px;
+    text-decoration: none;
+    padding-bottom: 20px;
+        
+}
+.ancho11{
+    width: 10%;
+}
+
+.ancho12{
+    width: 33%;
+
+}
+
+.blanco{
+    background-color: white;
+}
+
+.form-buscador{
+    width: 50% ;
+    margin: auto;
+}
+.controls2{
+    width: 75%;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    border: 1px solid #ebebeb;
+
+}
+.botons2{
+    width: 25%;
+    color:#666;;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.ba{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+

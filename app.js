@@ -19,7 +19,7 @@ app.get("/ingresar",(req,res)=>{
 })
 
 
-app.listen(puerto,()=>{
+app.listen(process.env.PORT || puerto,()=>{
     console.log ("Servidor corriendo en el puerto",puerto)
 })
 

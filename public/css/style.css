@@ -17,6 +17,8 @@ body{
 h2{
     font-size: 24px;
     color: #666;
+    padding-bottom:20px ;
+    padding-top: 20px;
 }
 
 p{
@@ -255,146 +257,6 @@ div.ofertas{
 header nav{
     display: none;
 }
-/* -------------Version Tablet  --------*/
-@media (min-width:361px ){
-
-    header nav{
-        display: block;
-        text-decoration: none;
-    }
-    .form-buscador{
-        width: 33% ;
-        margin: auto;
-    }
-
-    main section article{
-        transition: box-shadow ;
-    }
-    
-    main section article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    main section article:hover .descripcion{
-        display: block;
-
-    }
-
-    main section div.products article:hover i{
-        transform: rotate(-90deg);
-    }
-
-    footer section article:hover .tarjeta{
-        color:tomato
-
-    }
-    
-    header .menu2{
-        display: none;
-    }
-
-    main section div.products{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    main section div.products article{
-        width: 45%;
-    }
-    .espacio30,
-    .espacio70{
-        width: 50%;
-    }
-
-    .foo{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-        
-}
-/* -------------Version Escritorio */
-
-@media (min-width: 769px){
-
-
-    main section div.products article{
-        width: 22%;
-    }
-    .cat{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:space-evenly;
-    }
-    .cat2{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:space-evenly ;
-    }
-    .cat3{
-        display: flex;
-        justify-content:space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-    }
-
-    .juntar{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-    }
-
-    .cuota{
-        display: flex;
-        align-items: center;
-        width: 33%;
-    }
-    .ancho-center{
-        display: flex;
-        justify-content: center;
-    }
-    .logo{
-        width: 33%;
-        padding: 10px;
-    }
-    .ancho33{
-        width: 33%;
-    }
-    .form-registers{
-        width: 40%;
-        margin:auto;
-        margin-top: 20px;
-    }
-
-}
-
-
-.ancho100{
-    width: 100%;
-}
-
-.ancho50{
-    width: 35%;
-}
-
-
-.ancho51{
-    width: 25%;
-}
-.ancho10{
-    width: 17%;
-    padding-right: 50px;
-}
 
 header nav{
     margin-left: 20px;
@@ -402,16 +264,10 @@ header nav{
     padding-bottom: 20px;
         
 }
-.ancho11{
-    width: 10%;
-}
 
-.ancho12{
-    width: 33%;
 
-}
 
-.blanco{
+footer{
     background-color: white;
 }
 
@@ -444,6 +300,180 @@ header nav{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+main{
+    padding-bottom: 40px;
+    
+}
+
+.iconos:hover{
+    color:#69aa00d3
+}
+
+.botons:hover{
+    background-color: #0022AA;
+}
+
+/* -------------Version Tablet  --------*/
+@media (min-width:361px ){
+
+    header nav{
+        display: block;
+        text-decoration: none;
+    }
+    .form-buscador{
+        width: 33% ;
+    }
+
+    main section article{
+        transition: box-shadow ;
+    }
+
+    
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article:hover .descripcion{
+        display: block;
+
+    }
+
+    main section div.products article i{
+        transition: transform 1s;
+    }
+
+    main section div.products article:hover i{
+        transform: rotate(-90deg);
+    }
+
+
+    header .menu2{
+        display: none;
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cat{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+    .cat2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly ;
+    }
+    .cat3{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .ancho50{
+        width: 35%;
+        list-style: none;
+    }
+    
+    
+    .ancho51{
+        list-style: none;
+        width: 35%;
+    }
+    .controls2{
+        width: 40%;
+        padding: 10px;
+        border-radius: 6px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        border: 1px solid #ebebeb;
+    
+    }
+
+    .botons2{
+        width: 10%;
+        color:#666;;
+        font-family: 'Roboto', sans-serif;
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 12px;
+        background-color: white;
+        border: 1px solid white;
+    }
+    .logo{
+        width: 33%;
+        
+    }
+    .cuota{
+        display: flex;
+        align-items: center;
+        width: 33%;
+    }
+
+
+    
+
+        
+}
+/* -------------Version Escritorio */
+
+@media (min-width: 769px){
+
+
+    main section div.products article{
+        width: 22%;
+    }
+    
+
+    .juntar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    
+    .ancho-center{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ancho33{
+        width: 33%;
+    }
+    .form-registers{
+        width: 40%;
+        margin:auto;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
 
 
 
